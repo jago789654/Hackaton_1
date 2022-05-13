@@ -16,6 +16,10 @@
     --principal-font: 'Noto Sans', sans-serif;
     --shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 } 
+
+h1 {
+  font-family: 'Iceberg', cursive;;
+}
 body {
  
     margin: 0;
@@ -26,13 +30,24 @@ body {
     position: absolute;
     top: 0;
 }
-header {
 
-    color: white;
-    background-color: var(--fourth-color);
+h1 {
+    margin-left: 23vw;
+    font-size: 8rem;
     padding-top: 10vh;
-    padding-bottom: 3vh;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    align-items: baseline;
+    background-color: var(--fourth-color);
     text-align: center;
+}
+
+header img {
+    height: 11vh;
+    margin-left: 25vw;
 }
 #slider {
     overflow: hidden;
@@ -43,13 +58,13 @@ header {
 
 #slider figure {
     position: relative;
-    width: 400%; /* 4 images de 100% */
+    width: 800%; /* 4 images de 100% */
     left: 0;
-    animation : 20s slider infinite;
+    animation : 50s slider infinite;
 }
 
 #slider figure img {
-    width: 25%; /* 100% divisé par 4 images */
+    width: 12.5%; /* 100% divisé par 4 images */
     float: left;
 }
 
@@ -57,24 +72,60 @@ header {
     0% {
         left: 0;
     }
-    5% {
-        left : 0;
+    10% {
+        left : 0%;
     }
-    33% {
+    12.5% {
         left: -100%;
     }
-    38% {
+    21.5% {
         left: -100%;
     }
-    66% {
+    25% {
         left: -200%;
     }
-    71% {
+    34% {
         left: -200%;
     }
-    100% {
+    37.5% {
         left: -300%;
     }
+    46.5% {
+        left: -300%;
+    }
+    50% {
+        left: -400%;
+    }
+    59% {
+        left: -400%;
+    }
+    62.5% {
+        left: -500%;
+    }
+    71.5% {
+        left: -500%;
+    }
+    75% {
+        left: -600%;
+    }
+    84% {
+        left: -600%;
+    }
+    87.5% {
+        left: -700%;
+    }
+    97.5% {
+        left: -700%;
+    }
+    100% {
+        left: -700%;
+    }
+}
+
+.toucan {
+    position: absolute;
+    left: 70vw;
+    top: 80vh;
 }
 
 .logo {
@@ -88,6 +139,8 @@ header {
 .logo img {
     margin-left: 5vw;
     opacity: 80;
+    margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 .asso img {
@@ -100,7 +153,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 25px;
+    margin-top: 150px;
     margin-bottom: 25px;
 }
 
@@ -109,4 +162,9 @@ header {
     width: 100vw;
     height: 65vh;
     position: relative;
+}
+
+footer {
+    background-color: var(--fourth-color);
+    min-height: 150px;
 }
