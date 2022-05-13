@@ -17,6 +17,10 @@
     --shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 } 
 
+.avion {
+    z-index: 2;
+}
+
 h1 {
   font-family: 'Iceberg', cursive;;
 }
@@ -29,6 +33,28 @@ body {
 .tout {
     position: absolute;
     top: 0;
+}
+
+.carte {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5vh;
+}
+
+section.carte > iframe {
+    height: 55vh;
+    width: 80vw;
+    border: none;
+    text-align: center;
+    margin-top: 2vh;
+}
+
+.h2 {
+    text-align: center;
+    color: var(--fifth-color);
+    font-size: 1.5rem;
+    padding-bottom: 6vh;
 }
 
 h1 {
@@ -46,8 +72,9 @@ header {
 }
 
 header img {
-    height: 11vh;
-    margin-left: 25vw;
+    padding-top: 25px;
+    height: 15vh;
+    margin-left: 22vw;
 }
 #slider {
     overflow: hidden;
@@ -122,6 +149,16 @@ header img {
     }
 }
 
+.video {
+    top: 178vh;
+    position: absolute;
+    z-index: 1;
+    max-height: 1px;
+    height: 1px;
+    margin-left: 2vw;
+
+}
+
 .toucan {
     position: absolute;
     left: 70vw;
@@ -153,7 +190,7 @@ header img {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 150px;
+    margin-top: 15px;
     margin-bottom: 25px;
 }
 
